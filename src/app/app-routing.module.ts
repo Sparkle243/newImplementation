@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
+import { CarouselImageSlideComponent } from './carousel-image-slide/carousel-image-slide.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'employeeDetails', component: EmployeeDetailsComponent },
     { path: 'employeeForm', component: EmployeeFormComponent },
+     { path: 'CarouselImageSlideComponent', component: CarouselImageSlideComponent },
   ];
 
   @NgModule({

@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeFormComponent } from './employee-form/employee-form.component';
+import { CarouselImageSlideComponent } from './carousel-image-slide/carousel-image-slide.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { ToastrModule } from 'ngx-toastr';
 
@@ -31,7 +32,8 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
     ContactComponent,
     DashboardComponent,
     EmployeeDetailsComponent,
-    EmployeeFormComponent
+    EmployeeFormComponent,
+    CarouselImageSlideComponent
   ],
   imports: [
     BrowserModule,
@@ -48,6 +50,7 @@ import { EmployeeFormComponent } from './employee-form/employee-form.component';
       { path: 'contact', component: ContactComponent },
       { path: 'employeeDetails', component: EmployeeDetailsComponent },
       { path: 'employeeForm', component: EmployeeFormComponent },
+      { path: 'CarouselImageSlideComponent', component: CarouselImageSlideComponent },
     ])
   ],
   providers: [],
