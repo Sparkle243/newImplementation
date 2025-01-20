@@ -67,26 +67,26 @@ export class UsercreationComponent implements OnInit {
       console.log("submitUserForm",res)
       console.log('apiErr',res,res.responseData) ;
     },error =>{
-      const apiErr ={
-        "responseData": {
-            "message": "User created successfully",
-            "data": {
-                "userName": "param",
-                "firstName": "param",
-                "lastName": "",
-                "email": "param@gmai2.com",
-                "password": "12345",
-                "confPassword": "12345",
-                "contact": 768786876,
-                "plant": 1100,
-                "Design": "Manager",
-                "function": "",
-                "_id": "678dcba63530478a0f425931",
-                "__v": 0
-            }
-        }
-    }
-    console.log('apiErr',apiErr,apiErr.responseData) ;
+    //   const apiErr ={
+    //     "responseData": {
+    //         "message": "User created successfully",
+    //         "data": {
+    //             "userName": "param",
+    //             "firstName": "param",
+    //             "lastName": "",
+    //             "email": "param@gmai2.com",
+    //             "password": "12345",
+    //             "confPassword": "12345",
+    //             "contact": 768786876,
+    //             "plant": 1100,
+    //             "Design": "Manager",
+    //             "function": "",
+    //             "_id": "678dcba63530478a0f425931",
+    //             "__v": 0
+    //         }
+    //     }
+    // }
+    // console.log('apiErr',apiErr,apiErr.responseData) ;
 
     })
     
@@ -95,58 +95,59 @@ export class UsercreationComponent implements OnInit {
     this.userList = []
     this.service.userList().subscribe((res:any)=>{
       this.userList = res.responseData.data
+      console.log("this.userList",this.userList)
     },error =>{
-      const apiErr = {
-        "responseData": {
-            "message": "Users fetched successfully",
-            "data": [
-                {
-                    "_id": "678bf6160d2e2c0291c9025a",
-                    "userName": "param",
-                    "firstName": "param",
-                    "lastName": "",
-                    "email": "param@gmail.com",
-                    "password": "12345",
-                    "confPassword": "12345",
-                    "contact": 7868766576,
-                    "plant": 1100,
-                    "Design": "Manager",
-                    "function": "",
-                    "__v": 0
-                },
-                {
-                    "_id": "678ca338076cc2f338738b32",
-                    "userName": "param",
-                    "firstName": "paramesh",
-                    "lastName": "",
-                    "email": "param@gmail1.com",
-                    "password": "12345",
-                    "confPassword": "12345",
-                    "contact": 7868766576,
-                    "plant": 1100,
-                    "Design": "Manager",
-                    "function": "",
-                    "__v": 0
-                },
-                {
-                    "_id": "678dcba63530478a0f425931",
-                    "userName": "param",
-                    "firstName": "param",
-                    "lastName": "",
-                    "email": "param@gmai2.com",
-                    "password": "12345",
-                    "confPassword": "12345",
-                    "contact": 768786876,
-                    "plant": 1100,
-                    "Design": "Manager",
-                    "function": "",
-                    "__v": 0
-                }
-            ]
-        }
-    }
-    this.userList = apiErr.responseData.data
-    console.log("this.userList",this.userList)
+    //   const apiErr = {
+    //     "responseData": {
+    //         "message": "Users fetched successfully",
+    //         "data": [
+    //             {
+    //                 "_id": "678bf6160d2e2c0291c9025a",
+    //                 "userName": "param",
+    //                 "firstName": "param",
+    //                 "lastName": "",
+    //                 "email": "param@gmail.com",
+    //                 "password": "12345",
+    //                 "confPassword": "12345",
+    //                 "contact": 7868766576,
+    //                 "plant": 1100,
+    //                 "Design": "Manager",
+    //                 "function": "",
+    //                 "__v": 0
+    //             },
+    //             {
+    //                 "_id": "678ca338076cc2f338738b32",
+    //                 "userName": "param",
+    //                 "firstName": "paramesh",
+    //                 "lastName": "",
+    //                 "email": "param@gmail1.com",
+    //                 "password": "12345",
+    //                 "confPassword": "12345",
+    //                 "contact": 7868766576,
+    //                 "plant": 1100,
+    //                 "Design": "Manager",
+    //                 "function": "",
+    //                 "__v": 0
+    //             },
+    //             {
+    //                 "_id": "678dcba63530478a0f425931",
+    //                 "userName": "param",
+    //                 "firstName": "param",
+    //                 "lastName": "",
+    //                 "email": "param@gmai2.com",
+    //                 "password": "12345",
+    //                 "confPassword": "12345",
+    //                 "contact": 768786876,
+    //                 "plant": 1100,
+    //                 "Design": "Manager",
+    //                 "function": "",
+    //                 "__v": 0
+    //             }
+    //         ]
+    //     }
+    // }
+    // this.userList = apiErr.responseData.data
+    // console.log("this.userList",this.userList)
     })
   }
 }
