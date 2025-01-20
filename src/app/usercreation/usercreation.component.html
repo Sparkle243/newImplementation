@@ -1,0 +1,141 @@
+
+<div class="section">
+    <form >
+
+    <div class="card">
+        <div class="card-header">
+        User Creation
+        </div>
+        <div class="card-body">
+
+            <div class="col-sm-12 col-md-12 col-lg-12 text-right mb-2 pr-0">
+                <button type="button" class="btn btn-raised btn-md btnSubmitApproval" (click)="newUserCreation(newUserTemplate)">Create New User</button>
+
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Plant</th>
+                            <th>Function</th>
+                            <th>Other</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Design</th>
+                            <th>Created By</th>
+                            <th>Design</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of userList">
+                            <td>{{data.plant}}</td>
+                            <td>{{data.function}}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{data.Design}}</td>
+                        </tr>
+                       
+                        
+                    </tbody>
+                </table>
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+
+</form>
+
+</div>
+
+<ng-template #newUserTemplate let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title">Create New User</h4>
+      <button type="button" class="close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="userCreationForm">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="userName" type="text" placeholder="">
+                    <label> User Name</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="firstName" type="text" placeholder="">
+                    <label> First name</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="lastName" type="text" placeholder="">
+                    <label> Last name</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="email" type="text" placeholder="">
+                    <label> Email</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="contact" type="text" placeholder="">
+                    <label> Contact</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="password" type="text" placeholder="">
+                    <label>Password</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="confirmPassword" type="text" placeholder="">
+                    <label>Confirm Password</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="plant" type="text" placeholder="">
+                    <label>Plant</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="function" type="text" placeholder="">
+                    <label> Function</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="other" type="text" placeholder="">
+                    <label> Other</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 colsm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="design" type="text" placeholder="">
+                    <label> Design</label>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-raised btn-md btnNewCreate mr-1" (click)="submitUserForm(c)">Create User</button>
+      <button type="button" class="btn btn-raised btn-md btnClose mr-2" (click)="d('Close click')">Close</button>
+
+    </div>
+  </ng-template>

@@ -1,0 +1,288 @@
+
+
+
+<!-- <div class="section">
+  <form [formGroup]="NFACreationForm">
+
+  <div class="card">
+      <div class="card-header">
+          Flight Booking
+      </div>
+      <div class="card-body">
+
+          <div class="row mt-2">
+             
+
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="project" type="text" placeholder="">
+                      <label> Customer Name</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="function" type="text" placeholder="">
+                      <label> Flight Type</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="date" type="text" placeholder="">
+                      <label> From Date</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="companyName" type="text" placeholder="">
+                      <label> To Date</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="vendor1" type="text" placeholder="">
+                      <label> From Journey</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="vendor2" type="text" placeholder="">
+                      <label> To Journey</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="WBSElement" type="text" placeholder="">
+                      <label> Time</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="floating-label">
+                      <input class="floating-input" formControlName="Subject" type="text" placeholder="">
+                      <label> Payment Method</label>
+                  </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="floating-label">
+                    <input class="floating-input" formControlName="Subject" type="text" placeholder="">
+                    <label> Food</label>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="floating-label">
+                  <input class="floating-input" formControlName="Subject" type="text" placeholder="">
+                  <label> Email </label>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="floating-label">
+                <input class="floating-input" formControlName="Subject" type="text" placeholder="">
+                <label> Phone Number</label>
+            </div>
+        </div>
+          </div>
+          <div class="table-responsive">
+
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                          <th>S.No</th>
+                          <th>Name</th>
+                          <th>Age</th>
+                          <th>Gender</th>
+                          <th class="text-nowrap">Alternative Number</th>
+                          <th class="text-nowrap">Goverment Id</th>
+                          <th class="text-nowrap">Blood Group</th>
+                          <th class="text-nowrap">Food</th>
+                          <th class="text-nowrap">Vendor 2 Amount</th>
+                          <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody formArrayName="rows">
+                    <tr *ngFor="let row of rows.controls; let i = index" [formGroupName]="i">
+                      <td><input type="text" formControlName="description" class="floating-input" placeholder="" (blur)="rowData()" /></td>
+                      <td>
+                        <input type="text" formControlName="material" class="floating-input" placeholder="" />
+                      </td>
+                      <td>
+                          <input type="text" formControlName="UOM" class="floating-input" placeholder="" /> 
+                        </td>
+                      <td>
+                          <input type="text" formControlName="quantity" class="floating-input" placeholder="" />
+                         
+                        </td>
+                        <td>
+                          <input type="text" formControlName="preRate" class="floating-input" placeholder="" />
+                         
+                        </td>
+                        <td>
+                          <input type="text" formControlName="vendor1Rate" class="floating-input" placeholder="" />
+                         
+                        </td>
+                        <td>
+                          <input type="text" formControlName="vendor1Amount" class="floating-input" placeholder="" />
+                         
+                        </td>
+                        <td>
+                          <input type="text" formControlName="vendor2Rate" class="floating-input" placeholder="" />
+                         
+                        </td>
+                        <td>
+                          <input type="text" formControlName="vendor2Amount" class="floating-input" placeholder="" />
+                         
+                        </td>
+                      <td class="text-center">
+                          <i class="fas fa-plus pr-1"  role="button" (click)="addRow()"></i>
+                        <i class="fas fa-trash text-danger"  role="button"  (click)="removeRow(i)"></i>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 text-right pr-0">
+              <button type="button" class="btn btn-raised btn-md btnSubmitApproval" (click)="onClickSubmit()">Save</button>
+
+          </div>
+      </div>
+
+  </div>
+  
+
+</form>
+
+</div> -->
+
+<div class="section">
+    <form [formGroup]="NFACreationForm">
+
+    <div class="card">
+        <div class="card-header">
+            NFA Creation
+        </div>
+        <div class="card-body">
+
+            <div class="row mt-2">
+               
+
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="project" type="text" placeholder="">
+                        <label> Project</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="function" type="text" placeholder="">
+                        <label> Function</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="date" type="text" placeholder="">
+                        <label> Date</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="companyName" type="text" placeholder="">
+                        <label> Company Name</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="vendor1" type="text" placeholder="">
+                        <label> Vendor 1</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="vendor2" type="text" placeholder="">
+                        <label> Vendor 2</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="WBSElement" type="text" placeholder="">
+                        <label> WBS Element</label>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="floating-label">
+                        <input class="floating-input" formControlName="Subject" type="text" placeholder="">
+                        <label> Subject</label>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                            <th>Description</th>
+                            <th>Material</th>
+                            <th>UOM</th>
+                            <th>Quantity</th>
+                            <th>Pre Rate</th>
+                            <th class="text-nowrap">Vendor 1 Rate</th>
+                            <th class="text-nowrap">Vendor 1 Amount</th>
+                            <th class="text-nowrap">Venter 2 Rate</th>
+                            <th class="text-nowrap">Vendor 2 Amount</th>
+                            <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody formArrayName="rows">
+                      <tr *ngFor="let row of rows.controls; let i = index" [formGroupName]="i">
+                        <td><input type="text" formControlName="description" class="floating-input" placeholder="" (blur)="rowData()" /></td>
+                        <td>
+                          <input type="text" formControlName="material" class="floating-input" placeholder="" />
+                        </td>
+                        <td>
+                            <input type="text" formControlName="UOM" class="floating-input" placeholder="" /> 
+                          </td>
+                        <td>
+                            <input type="text" formControlName="quantity" class="floating-input" placeholder="" />
+                           
+                          </td>
+                          <td>
+                            <input type="text" formControlName="preRate" class="floating-input" placeholder="" />
+                           
+                          </td>
+                          <td>
+                            <input type="text" formControlName="vendor1Rate" class="floating-input" placeholder="" />
+                           
+                          </td>
+                          <td>
+                            <input type="text" formControlName="vendor1Amount" class="floating-input" placeholder="" />
+                           
+                          </td>
+                          <td>
+                            <input type="text" formControlName="vendor2Rate" class="floating-input" placeholder="" />
+                           
+                          </td>
+                          <td>
+                            <input type="text" formControlName="vendor2Amount" class="floating-input" placeholder="" />
+                           
+                          </td>
+                        <td class="text-center">
+                            <i class="fas fa-plus pr-1"  role="button" (click)="addRow()"></i>
+                          <i class="fas fa-trash text-danger"  role="button"  (click)="removeRow(i)"></i>
+
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 text-right pr-0">
+                <button type="button" class="btn btn-raised btn-md btnSubmitApproval" (click)="onClickSubmit()">Submit For Approval</button>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+</form>
+
+</div>

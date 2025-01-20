@@ -1,0 +1,56 @@
+
+<div class="section">
+    <form >
+
+    <div class="card">
+        <div class="card-header">
+        List Of Note For Approval
+        </div>
+        <div class="card-body">
+            <div class="table-responsive" >
+
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Reference Number</th>
+                            <th>Plant</th>
+                            <th>Function</th>
+                            <th>Date</th>
+                            <th>Current Approver</th>
+                            <th>Approved By</th>
+                            <th>Approved By</th>
+                            <th>Approved By</th>
+                            <th>Approved By</th>
+                            <th>Approved By</th>
+                            <th>Approved By</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let data of headersList">
+                            <td>{{data.referenceNo}}</td>
+                            <td></td>
+                            <td>{{data.function}}</td>
+                            <td>{{data.date}}</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+
+</form>
+
+</div>
